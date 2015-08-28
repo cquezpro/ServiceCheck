@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.phonegap.plugins.ServiceCheck" version="1.0.0">
+	<name>ServiceCheck</name>
+	<author>Sirius</author>
+	<description>check if GPS/Google Play service is enabled on Android</description>
+	<license>MIT</license>
+	<keywords>gps, google play service, check, enabled, android </keywords>
+	<repo>https://github.com/sirius2013/ServiceCheck.git</repo>
+	<dependency id="org.apache.cordova.geolocation" version="1.0.1" />
+	<dependency id="com.google.playservices" />
+	<js-module src="www/ServiceCheck.js" name="ServiceCheck">
+		<clobbers target="ServiceCheck" />
+	</js-module>
+	<platform name="android">
+		<source-file src="src/android/ServiceCheck.java" target-dir="src/com/phonegap/plugins" />
+ 		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="ServiceCheck">
+				<param name="android-package" value="com.phonegap.plugins.ServiceCheck"/>
+			</feature>
+		</config-file>
+	</platform>
+</plugin>
