@@ -13,4 +13,10 @@
     <feature name="ServiceCheck">
         <param name="android-package" value="com.phonegap.plugins.ServiceCheck" />
     </feature>
+    <feature name="NativeSettings">
+        <param name="android-package" value="com.phonegap.plugins.nativesettings.NativeSettings" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
 </widget>

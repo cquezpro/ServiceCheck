@@ -6,7 +6,9 @@
 	<license>MIT</license>
 	<keywords>gps, google play service, check, enabled, android </keywords>
 	<repo>https://github.com/sirius2013/ServiceCheck.git</repo>
-	<dependency id="org.apache.cordova.geolocation" version="1.0.1" />
+	<dependency id="org.apache.cordova.geolocation" version="1.0.1" />	
+	<dependency id="com.phonegap.plugins.nativesettingsopener" />
+	<dependency id="org.apache.cordova.network-information" />	
 	<dependency id="com.google.playservices" />
 	<js-module src="www/ServiceCheck.js" name="ServiceCheck">
 		<clobbers target="ServiceCheck" />
